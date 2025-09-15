@@ -40,5 +40,5 @@ if __name__ == '__main__':
         total_time += end - begin
         print("="*10)
         print("Epoch:{}/{}, Loss:{:.4f}".format(epoch+1, epochs, loss_total))
-        print("Cost time:{:.0f}m{:.0f}s".format(total_time//60, total_time%60))
+        print("Cost Time:{:.0f}m{:.0f}s".format(total_time//60, total_time%60))
         print("="*10)
