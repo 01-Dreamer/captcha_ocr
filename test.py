@@ -16,6 +16,7 @@ if __name__ == '__main__':
     transforms.ToTensor()
     ])
 
+	model.eval()
     img = Image.open("./dataset/test/0icv_1757934185.png")
     input = transform(img).unsqueeze(0).to(device)
     output = model(input)
