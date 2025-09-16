@@ -42,3 +42,4 @@ if __name__ == '__main__':
         print("Epoch:{}/{}, Loss:{:.4f}".format(epoch+1, epochs, loss_total))
         print("Cost Time:{:.0f}m{:.0f}s".format(total_time//60, total_time%60))
         print("="*10)
+	torch.save(model, "./best.pth")
